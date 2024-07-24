@@ -9,7 +9,6 @@ df1 = pd.read_excel(os.path.join("app/siswa_pelanggar.xlsx"))
 df1.head()
 
 def cluster():
-
     siswa = np.random.randint(20, 41, 100)
     pelanggar =np.random.randint(0,15,100)
 

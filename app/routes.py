@@ -11,8 +11,8 @@ csrf = CSRFProtect()
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
+    result = cluster()
     if request.method == 'POST':
-        result = cluster()
         nama = request.form.get('nama')
         if not nama:
             flash('Nama tidak boleh kosong', 'danger')
